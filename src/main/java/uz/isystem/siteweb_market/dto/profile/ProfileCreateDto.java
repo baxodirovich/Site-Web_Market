@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 import lombok.Setter;
 import uz.isystem.siteweb_market.dto.AddressDto;
+import uz.isystem.siteweb_market.enums.ProfileRole;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;

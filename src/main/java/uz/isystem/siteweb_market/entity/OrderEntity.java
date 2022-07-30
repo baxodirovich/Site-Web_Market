@@ -3,6 +3,7 @@ package uz.isystem.siteweb_market.entity;
 import lombok.Getter;
 import lombok.Setter;
 import uz.isystem.siteweb_market.enums.OrderStatus;
+import uz.isystem.siteweb_market.enums.PaymentType;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -30,6 +31,9 @@ public class OrderEntity {
     @Column(name = ("contact"))
     private String contact;
     @Column(name = ("payment_type"))
+    @Enumerated(EnumType.STRING)
+    private PaymentType paymentType;
+    @Column(name = ("order_status"))
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 

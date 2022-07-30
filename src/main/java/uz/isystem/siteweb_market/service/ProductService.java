@@ -127,7 +127,7 @@ public class ProductService {
         return dto;
     }
 
-    private ProductEntity findEntityById(Integer id) {
+    public ProductEntity findEntityById(Integer id) {
         Optional<ProductEntity> optional = repository.findById(id);
         if (!optional.isPresent()) {
             throw new ProfileNotFoundException("Invalid id");

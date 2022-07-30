@@ -3,7 +3,7 @@ package uz.isystem.siteweb_market.convertlar;
 import uz.isystem.siteweb_market.dto.profile.ProfileDetailDto;
 import uz.isystem.siteweb_market.entity.ProfileEntity;
 
-public class ProfileConvertor {
+public class ProfileConverter {
     public static ProfileDetailDto toDto(ProfileEntity entity){
         if (entity == null)
             return null;

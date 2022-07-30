@@ -40,7 +40,7 @@ public class JwtTokenUtil {
         return jwt;
     }
 
-    public String GetUserId(String token) {
+    public String getUserId(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(jwtSecret)
                 .parseClaimsJws(token)
@@ -48,7 +48,7 @@ public class JwtTokenUtil {
         return claims.getSubject().split(",")[0];
     }
 
-    public String getUserId(String token) {
+    public String getUsername(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(jwtSecret)
                 .parseClaimsJws(token)
